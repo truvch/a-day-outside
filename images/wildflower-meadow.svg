@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<rect width="600" height="400" fill="#bfe3e0"/>
+<circle cx="478" cy="84" r="46" fill="#ffdd8d"/>
+<path d="M0 245Q180 185 335 242T600 225V400H0Z" fill="#81ad72"/>
+<path d="M0 304Q160 245 300 305T600 277V400H0Z" fill="#4f8658"/>
+<g stroke="#315f46" stroke-width="5"><path d="M75 352v-70m90 94v-81m94 44v-71m91 108v-86m96 50v-76m92 103v-75"/></g>
+<g fill="#f8d782"><circle cx="75" cy="280" r="13"/><circle cx="259" cy="265" r="13"/><circle cx="446" cy="260" r="13"/></g>
+<g fill="#e98b95"><circle cx="165" cy="292" r="14"/><circle cx="350" cy="287" r="14"/><circle cx="538" cy="289" r="14"/></g>
+</svg>

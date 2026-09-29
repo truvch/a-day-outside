@@ -1,0 +1,128 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f1e8;
+  color: #243c38;
+}
+
+header,
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: #d8e9dd;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+main {
+  width: min(100% - 2rem, 1100px);
+  margin: 2rem auto;
+}
+
+p {
+  margin: 0 auto 1rem;
+  font-size: 1.125rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+  border: 3px solid #42655a;
+  background-color: #fffdf7;
+  color: #243c38;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 0.75rem 1rem 1rem;
+  font-weight: 700;
+}
+
+a {
+  color: #153f55;
+  font-weight: 700;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-thickness: 3px;
+}
+
+@media (min-width: 772px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  figure {
+    border-radius: 50%;
+  }
+
+  figure:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  figure {
+    border-radius: 0;
+  }
+
+  figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #142522;
+    color: #f2eee1;
+  }
+
+  header,
+  footer {
+    background-color: #233d36;
+  }
+
+  figure {
+    border-color: #000;
+    background-color: #24352f;
+    color: #fff0ab;
+  }
+
+  a {
+    color: #aee8fb;
+  }
+}
